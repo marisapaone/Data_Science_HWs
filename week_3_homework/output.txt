@@ -1,0 +1,96 @@
+C:\Users\marisap\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:\Users\marisap\OneDrive - TFCornerstone Inc\Documents\BU\Data Science\new_module_3\week_3_homework\main.py" 
+---------Question 1 Part 1---------
+       f_1   f_2   f_3   f_4  Class
+mean  0.43  1.92  1.40 -1.19   0.44
+std   2.84  5.87  4.31  2.10   0.50
+
+---------Question 1 Part 2---------
+  class  μ(f_1)  σ(f_1)  μ(f_2)  σ(f_2)  μ(f_3)  σ(f_3)  μ(f_4)  σ(f_4)
+0     0    2.28    2.02    4.26    5.14    0.80    3.24   -1.15    2.13
+1     1   -1.87    1.88   -0.99    5.40    2.15    5.26   -1.25    2.07
+2   all    0.43    2.84    1.92    5.87    1.40    4.31   -1.19    2.10
+
+---------Question 2 Part 1---------
+         f_1      f_2      f_3       f_4  Class  Color
+627  2.01530  0.43661  4.58640 -0.315100      0  green
+823 -1.97900  3.23010 -1.35750 -2.581900      1    red
+629  3.75700 -5.42360  3.82550 -1.252600      0  green
+738  0.92703  9.43180 -0.66263 -1.672800      0  green
+603  3.76350  2.78110  0.66119  0.341790      0  green
+..       ...      ...      ...       ...    ...    ...
+991 -2.98830  0.31245  0.45041  0.068951      1    red
+988 -3.68170  3.22390 -0.69347 -3.400400      1    red
+259  3.03290  2.29480  2.11350  0.350840      0  green
+770  0.34340  0.12415 -0.28733  0.146540      1    red
+396  2.67990  3.13490  0.34073  0.584890      0  green
+
+[686 rows x 6 columns]
+C:\Users\marisap\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\seaborn\axisgrid.py:118: UserWarning: The figure layout has changed to tight
+  self._figure.tight_layout(*args, **kwargs)
+C:\Users\marisap\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\seaborn\axisgrid.py:118: UserWarning: The figure layout has changed to tight
+  self._figure.tight_layout(*args, **kwargs)
+
+---------Question 2 Part 3---------
+           f_1      f_2       f_3       f_4  Class  Color Prediction
+824  -0.429400 -0.14693  0.044265 -0.156050      1    red      green
+500   3.864400  3.70610  0.704030  0.352140      0  green      green
+710   2.401200  1.62230  3.031200  0.716790      0  green      green
+213   0.680870  2.32590  4.908500  0.549980      0  green      green
+479   2.096200  2.47690  1.937900 -0.040962      0  green      green
+...        ...      ...       ...       ...    ...    ...        ...
+865  -0.779950  3.23220 -3.282000 -3.100400      1    red        red
+670   3.482000 -4.16340  3.500800 -0.078462      0  green      green
+726   0.040498  8.52340  1.446100 -3.930600      0  green        red
+1149  0.333250  3.31080 -4.508100 -4.012000      1    red        red
+1083 -0.698790 -3.37710  4.121100  1.504300      1    red      green
+
+[686 rows x 7 columns]
+Accuracy for simple classifier =  63.11953352769679 %
+
+---------Question 2 Part 4&5---------
+   True Positives  False Positives  True Negatives  False Negatives  Accuracy   TPR       TNR
+0             268              132             165              121  0.631195  0.67  0.576923
+
+---------Question 3 Part 1&3---------
+Accuracy for kNN with k = 3 is: 0.9970845481049563
+   True Positives  False Positives  True Negatives  False Negatives  Accuracy       TPR  TNR
+0             387                2             297                0  0.997085  0.994859  1.0
+Accuracy for kNN with k = 5 is: 0.9883381924198251
+   True Positives  False Positives  True Negatives  False Negatives  Accuracy       TPR  TNR
+0             381                8             297                0  0.988338  0.979434  1.0
+Accuracy for kNN with k = 7 is: 0.9912536443148688
+   True Positives  False Positives  True Negatives  False Negatives  Accuracy       TPR  TNR
+0             383                6             297                0  0.991254  0.984576  1.0
+Accuracy for kNN with k = 9 is: 0.9868804664723032
+   True Positives  False Positives  True Negatives  False Negatives  Accuracy       TPR  TNR
+0             380                9             297                0   0.98688  0.976864  1.0
+Accuracy for kNN with k = 11 is: 0.9941690962099126
+   True Positives  False Positives  True Negatives  False Negatives  Accuracy       TPR  TNR
+0             385                4             297                0  0.994169  0.989717  1.0
+
+---------Question 3 Part 5---------
+Simple Classifier Prediction: green
+k-NN prediction: green
+
+---------Question 4 Part 1---------
+Accuracy for kNN with the best k = 3 dropping feature: f_1 is: 0.9504373177842566
+Accuracy for kNN with the best k = 3 dropping feature: f_2 is: 0.9650145772594753
+Accuracy for kNN with the best k = 3 dropping feature: f_3 is: 0.9825072886297376
+Accuracy for kNN with the best k = 3 dropping feature: f_4 is: 1.0
+
+---------Question 5 Part 1---------
+
+Accuracy for Logistic Regression is: 0.9766763848396501
+   True Positives  False Positives  True Negatives  False Negatives  Accuracy      TPR       TNR
+0             374               15             296                1  0.976676  0.96144  0.996633
+
+---------Question 5 Part 5---------
+Logistic Regression prediction: green
+
+---------Question 6 Part 1---------
+Accuracy for Logistic Regression dropping feature: f_1 is: 0.8104956268221575
+Accuracy for Logistic Regression dropping feature: f_2 is: 0.902332361516035
+Accuracy for Logistic Regression dropping feature: f_3 is: 0.8833819241982507
+Accuracy for Logistic Regression dropping feature: f_4 is: 0.978134110787172
+
+Process finished with exit code 0
