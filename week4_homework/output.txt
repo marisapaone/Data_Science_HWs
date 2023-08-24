@@ -1,0 +1,96 @@
+"C:\Users\marisap\OneDrive - TFCornerstone Inc\Documents\BU\Data Science\new_module_4\week4_homework\venv\Scripts\python.exe" "C:\Users\marisap\OneDrive - TFCornerstone Inc\Documents\BU\Data Science\new_module_4\week4_homework\main.py" 
+-------------Question 1-------------
+      age  anaemia  creatinine_phosphokinase  ...  smoking  time  DEATH_EVENT
+0    75.0        0                       582  ...        0     4            1
+1    55.0        0                      7861  ...        0     6            1
+2    65.0        0                       146  ...        1     7            1
+3    50.0        1                       111  ...        0     7            1
+4    65.0        1                       160  ...        0     8            1
+..    ...      ...                       ...  ...      ...   ...          ...
+294  62.0        0                        61  ...        1   270            0
+295  55.0        0                      1820  ...        0   271            0
+296  45.0        0                      2060  ...        0   278            0
+297  45.0        0                      2413  ...        1   280            0
+298  50.0        0                       196  ...        1   285            0
+
+[299 rows x 13 columns]
+     creatinine_phosphokinase  serum_creatinine  ...  platelets  DEATH_EVENT
+14                         80               1.0  ...   427000.0            0
+20                         52               1.3  ...   276000.0            0
+23                         63               0.8  ...   368000.0            0
+33                        159               1.2  ...   302000.0            0
+38                       2656               2.3  ...   305000.0            0
+..                        ...               ...  ...        ...          ...
+294                        61               1.1  ...   155000.0            0
+295                      1820               1.2  ...   270000.0            0
+296                      2060               0.8  ...   742000.0            0
+297                      2413               1.4  ...   140000.0            0
+298                       196               1.6  ...   395000.0            0
+
+[203 rows x 5 columns]
+     creatinine_phosphokinase  serum_creatinine  ...  platelets  DEATH_EVENT
+0                         582              1.90  ...  265000.00            1
+1                        7861              1.10  ...  263358.03            1
+2                         146              1.30  ...  162000.00            1
+3                         111              1.90  ...  210000.00            1
+4                         160              2.70  ...  327000.00            1
+..                        ...               ...  ...        ...          ...
+220                       582              1.83  ...  263358.03            1
+230                       166              1.70  ...   62000.00            1
+246                      2017              1.10  ...  314000.00            1
+262                       258              1.40  ...  198000.00            1
+266                      1199              1.83  ...  263358.03            1
+
+[96 rows x 5 columns]
+-------------Question 2-------------
+Simple Linear Regression Surviving Patients
+Weights: [-1.53165790e-06  1.37108905e+02]
+Sum of the squared residuals for degree 1  =  1589.9289657642921
+Equation:  -1.5316579033662922e-06x + 137.1089047864389
+
+Simple Linear Regression Deceased Patients
+Weights: [6.38325845e-06 1.34184754e+02]
+Sum of the squared residuals for degree 1  =  1286.2299569326603
+Equation:  6.383258454279181e-06x + 134.1847541310373
+
+Quadratic Regression Surviving Patients
+Weights: [ 1.71968684e-11 -1.36377432e-05  1.38990026e+02]
+Sum of the squared residuals for degree 2  =  1539.985467347811
+Equation: 1.71968684424478e-11x^2 + -1.363774316780376e-05x + 138.9900261964113
+
+Quadratic Regression Deceased Patients
+Weights: [-2.37480459e-11  2.12106416e-05  1.32191735e+02]
+Sum of the squared residuals for degree 2  =  1284.8596845808988
+Equation: -2.3748045945903475e-11x^2 + 2.1210641555372258e-05x + 132.19173541374678
+
+Cubic Spline Regression Surviving Patients
+Weights: [-7.87203439e-17  1.10342589e-10 -4.52118079e-05  1.42140534e+02]
+Sum of the squared residuals for degree 3  =  1565.9644825344972
+Equation: -7.872034389657712e-17x^3 + 1.1034258916259679e-10x^2 + -4.521180786303318e-05x + 142.14053416319348
+
+Cubic Spline Regression Deceased Patients
+Weights: [ 1.16560934e-16 -1.40645437e-10  5.52740222e-05  1.29343195e+02]
+Sum of the squared residuals for degree 3  =  1285.3537470417343
+Equation: 1.1656093392263892e-16x^3 + -1.4064543723766403e-10x^2 + 5.527402224303677e-05x + 129.3431952472718
+
+GLM X Logarithmic Regression of Survivors
+Weights: [ -0.80653136 146.74443764]
+Sum of the squared residuals =  1580.573794001695
+Equation: y = -0.8065313616314389log(x) + 146.74443764485804
+
+GLM XY Logarithmic Regression of Survivors
+Weights: [-0.0057884   4.98941187]
+Sum of the squared residuals =  1593.4817471622594
+Equation: log(y) = -0.0057883989270776336log(x) + 4.989411868059922
+
+GLM X Logarithmic Regression of the deceased
+Weights: [  1.89714299 112.34211168]
+Sum of the squared residuals =  1281.1361854295956
+Equation: y = 1.8971429907278525log(x) + 112.34211167603743
+
+GLM XY Logarithmic Regression of the deceased
+Weights: [0.01485906 4.72680568]
+Sum of the squared residuals =  1274.9715404356466
+Equation: log(y) = 0.014859064296604893log(x) + 4.726805678402919
+
+Process finished with exit code 0
